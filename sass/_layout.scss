@@ -1,0 +1,33 @@
+.container{
+    margin: 6rem auto;
+    max-width: 80%;
+    background-color: white;
+    min-height: 60rem;
+}
+
+.header{
+    background-color: white;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-size: 1.4rem;
+    
+}
+
+.content{
+    display: flex;
+}
+
+.nav{
+background-color: orangered;
+//height: 40rem;
+
+flex: 0 0 18%;
+}
+
+.hotel{
+    background: blue;
+    flex: 1;
+}
