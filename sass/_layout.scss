@@ -13,6 +13,7 @@
     align-items: center;
     
     font-size: 1.4rem;
+    border-bottom: 1px solid var(--Grey-light-3);
     
 }
 
@@ -29,10 +30,7 @@ flex-direction: column;
 justify-content: space-between;
 }
 
-.hotel{
-    background: blue;
+.hotel-view{
     flex: 1;
-
-
     height: 80rem;
 }

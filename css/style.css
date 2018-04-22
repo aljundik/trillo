@@ -61,7 +61,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--Grey-light-3); }
 
 .content {
   display: flex; }
@@ -73,8 +74,7 @@ body {
   flex-direction: column;
   justify-content: space-between; }
 
-.hotel {
-  background: blue;
+.hotel-view {
   flex: 1;
   height: 80rem; }
 
@@ -198,3 +198,76 @@ body {
   text-align: center;
   padding: 2.5rem;
   color: var(--Grey-light-4); }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
+.overview {
+  border-bottom: 1px solid var(--Grey-light-3);
+  display: flex;
+  align-items: center; }
+  .overview__heading {
+    font-family: inherit;
+    font-weight: 400;
+    padding: 2rem;
+    color: var(--Grey-dark-2);
+    text-transform: uppercase; }
+  .overview__rating {
+    margin-left: 2rem;
+    background-color: var(--primary);
+    font-family: inherit;
+    font-weight: 400;
+    color: white;
+    padding: 0 2.25rem;
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .overview__rating-count {
+    text-transform: uppercase; }
+  .overview__rating-average {
+    font-size: 1.7rem; }
+  .overview__stars {
+    margin-right: auto;
+    display: flex;
+    margin-left: 1rem; }
+  .overview__icon-star {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--primary); }
+  .overview__location {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .overview__icon-location {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--primary); }
+
+.btn-inline {
+  border: none;
+  background-color: transparent;
+  color: var(--primary);
+  border-bottom: 1px solid currentColor;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s; }
+  .btn-inline:hover {
+    background-color: var(--Grey-light-2); }
+  .btn-inline:focus {
+    animation: bigsmall 1s infinite; }
+
+@keyframes bigsmall {
+  0% {
+    box-shadow: 0rem 0rem var(--Grey-dark-1);
+    transform: scale(1); }
+  50% {
+    box-shadow: 0.4rem 0.3rem var(--Grey-dark-1);
+    transform: scale(1.05); }
+  100% {
+    box-shadow: 0rem 0rem var(--Grey-dark-1);
+    transform: scale(1); } }
