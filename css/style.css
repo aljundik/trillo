@@ -79,6 +79,7 @@ body {
   flex: 1; }
 
 .detail {
+  font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
   background-color: var(--Grey-light-1);
@@ -90,12 +91,10 @@ body {
   margin-right: 4.5rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.06);
   padding: 3rem;
-  font-size: 1.4rem;
   font-family: inherit; }
 
 .user-reviews {
-  flex: 1;
-  background-color: orangered; }
+  flex: 1; }
 
 .logo {
   height: 3.25rem;
@@ -328,3 +327,46 @@ body {
   .recommended__count {
     margin-right: auto;
     font-size: 1.4rem; }
+
+.review {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  background-color: white;
+  margin-bottom: 3.5rem;
+  position: relative; }
+  .review__text {
+    position: relative;
+    z-index: 10; }
+  .review__user {
+    display: flex;
+    padding: 0.7rem 0rem;
+    align-items: center; }
+  .review__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%; }
+  .review__user-box {
+    margin-left: 1rem;
+    display: inline;
+    margin-right: auto; }
+  .review__user-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem; }
+  .review__user-date {
+    font-size: 1rem;
+    color: var(--Grey-dark-2); }
+  .review__rating {
+    font-weight: 100;
+    color: var(--primary);
+    font-size: 2rem; }
+  .review::before {
+    content: "\201C";
+    position: absolute;
+    left: -0.7rem;
+    top: -7.75rem;
+    font-size: 17rem;
+    font-family: sans-serif;
+    color: var(--Grey-light-2);
+    z-index: 1; }
