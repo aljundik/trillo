@@ -32,6 +32,9 @@ Grey dark 3: #999
 *::before {
   box-sizing: inherit; }
 
+*:focus {
+  outline: none; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -379,3 +382,43 @@ body {
     font-family: sans-serif;
     color: var(--Grey-light-2);
     z-index: 1; }
+
+.cta {
+  text-align: center;
+  padding: 3rem;
+  text-transform: uppercase; }
+  .cta__book-now {
+    font-weight: 400;
+    font-size: 1.9;
+    margin-bottom: 2rem; }
+
+.btn {
+  border: none;
+  background-image: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+  border-radius: 100px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase; }
+  .btn__visible {
+    display: inline-block;
+    padding: 2rem 5rem;
+    transition: all .2s; }
+  .btn__invisble {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -4rem;
+    left: 0;
+    transition: all .2s; }
+  .btn:hover {
+    background-image: linear-gradient(to left, var(--primary-light), var(--primary-dark)); }
+  .btn:hover .btn__visible {
+    transform: translateY(4rem); }
+  .btn:hover .btn__invisble {
+    height: 100%;
+    width: 100%;
+    top: 2rem; }
+  .btn:focus {
+    animation: bigsmall 1s infinite; }
