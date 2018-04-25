@@ -309,10 +309,19 @@
     padding: 0.5rem;
     cursor: pointer;
     transition: all 0.2s;
+    & span {
+        font-size: 2rem;
+        margin-left: 1px;
+        transition: margin-left 0.2s;
+    }
 
 
     &:hover{
         background-color: var(--Grey-light-2);
+
+        & span{
+            margin-left: 8px;
+        }
     }
 
     &:focus{
